@@ -82,7 +82,7 @@ while True:
             elif first_click and event.button == 1 and not game_over:
                 game_field.game_started = True
                 current_field.is_open = True
-                game_field.generate_mines(10, fields, mines, current_field)
+                game_field.generate_mines(100, fields, mines, current_field)
                 current_field.scan(mines, fields, screen)
                 first_click = False
                 time = 0
